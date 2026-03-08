@@ -621,21 +621,7 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* ════ GLOBAL ANIMATIONS ════ */}
-      <style jsx global>{`
-        @keyframes shimmer { from { background-position: 0% center; } to { background-position: 200% center; } }
-        @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-33.33%); } }
-        @keyframes breathe { 0%,100% { transform: scale(1); opacity:0.6; } 50% { transform: scale(1.08); opacity:1; } }
-        @keyframes float { 0%,100% { transform: translateY(0px) rotate(0deg); opacity:0.5; } 33% { transform: translateY(-18px) rotate(2deg); opacity:1; } 66% { transform: translateY(8px) rotate(-1deg); opacity:0.7; } }
-        @keyframes fadeSlideDown { from { opacity:0; transform: translateY(-20px); } to { opacity:1; transform: translateY(0); } }
-        @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-        @keyframes scrollPulse { 0%,100% { transform: scaleY(1); opacity:1; } 50% { transform: scaleY(0.6); opacity:0.4; } }
-        @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0; } }
-        @keyframes spin { from { transform: translate(-50%,-50%) rotate(0deg); } to { transform: translate(-50%,-50%) rotate(360deg); } }
-        @keyframes starPop { from { transform: scale(0) rotate(-30deg); opacity:0; } to { transform: scale(1) rotate(0deg); opacity:1; } }
-        .animate-blink { animation: blink 1s step-end infinite; }
-        * { cursor: none !important; }
-      `}</style>
+
     </div>
   );
 }

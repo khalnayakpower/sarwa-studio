@@ -107,13 +107,7 @@ export default function NotFound() {
         </Reveal>
       </div>
 
-      <style jsx global>{`
-        @keyframes fadeUp {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fadeUp { animation: fadeUp 0.7s ease-out; }
-      `}</style>
+
     </div>
   );
 }

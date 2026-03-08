@@ -20,8 +20,58 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sarwa Studio — Creative Digital Agency",
-  description: "Sarwa Studio delivers world-class web development, 3D animation, video editing, software solutions, and graphic design.",
+  metadataBase: new URL('https://sarwastudio.com'),
+  title: {
+    default: 'Sarwa Studio — Creative Digital Agency',
+    template: '%s | Sarwa Studio',
+  },
+  description:
+    'Sarwa Studio delivers world-class web development, 3D animation, video editing, software solutions, and graphic design.',
+  keywords: [
+    'Sarwa Studio',
+    'creative agency',
+    'web development',
+    '3D animation',
+    'video editing',
+    'software solutions',
+    'graphic design',
+    'digital marketing',
+    'UI UX design',
+    'brand identity',
+  ],
+  authors: [{ name: 'Sarwa Studio', url: 'https://sarwastudio.com' }],
+  creator: 'Sarwa Studio',
+  publisher: 'Sarwa Studio',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://sarwastudio.com',
+    siteName: 'Sarwa Studio',
+    title: 'Sarwa Studio — Creative Digital Agency',
+    description:
+      'Sarwa Studio delivers world-class web development, 3D animation, video editing, software solutions, and graphic design.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sarwa Studio — Creative Digital Agency',
+    description:
+      'World-class web development, 3D animation, video editing & graphic design.',
+    creator: '@sarwastudio',
+  },
+  alternates: {
+    canonical: 'https://sarwastudio.com',
+  },
 };
 
 export default function RootLayout({
